@@ -2,7 +2,7 @@ const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
 
-const uri = '';
+const uri = 'mongodb+srv://zane_adamson:Millb0y2@cluster1.rjwimzh.mongodb.net/';
 const client = new MongoClient(uri);
 let db;
 
