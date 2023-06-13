@@ -11,7 +11,7 @@ Client.connect(err => {
     db = client.db(user_auth);
 });
 
-app.get('/', (req,res) => {
+app.get('/users', (req,res) => {
     db.collection(users).find().toArray((err,result) => {
         if (err) throw err;
         res.send(result);
